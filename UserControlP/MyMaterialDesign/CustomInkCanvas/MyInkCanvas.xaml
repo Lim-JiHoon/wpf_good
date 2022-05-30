@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="UserControlP.MyMaterialDesign.CustomInkCanvas.MyInkCanvas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"              
+             xmlns:local="clr-namespace:UserControlP.MyMaterialDesign.CustomInkCanvas" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+  <UserControl.Resources>
+    <Style TargetType="Button">
+      <Style.Resources>
+        <Style TargetType="Border">
+          <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+      </Style.Resources>
+      <Setter Property="Height" Value="45"/>
+      <Setter Property="Width" Value="45"/>
+      <Setter Property="Margin" Value="1 0"/>
+    </Style>
+
+    <Style TargetType="StackPanel">
+
+
+    </Style>
+  </UserControl.Resources>
+  <Grid Background="White">
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition Height="50"/>
+    </Grid.RowDefinitions>
+
+    <!--InkCanvas-->
+    <InkCanvas x:Name="ink">
+
+    </InkCanvas>
+
+    <!--Tool-->
+
+    <Border  Grid.Row="1" BorderThickness="0 1 0 0" BorderBrush="#FFEAEAEA">
+      <Border.Effect>
+        <DropShadowEffect BlurRadius="5" Opacity="0.2"/>
+      </Border.Effect>
+      <StackPanel Orientation="Horizontal">
+        <Button x:Name="btnBlack" Background="Black" Command="{Binding ColorCommand}" 
+                CommandParameter ="{Binding RelativeSource={RelativeSource Self}, Path=Background}"/>
+        <Button x:Name="btnRed" Background="Red" Command="{Binding ColorCommand}" 
+                CommandParameter ="{Binding RelativeSource={RelativeSource Self}, Path=Background}"/>
+        <Button x:Name="btnBlue" Background="Blue" Command="{Binding ColorCommand}" 
+                CommandParameter ="{Binding RelativeSource={RelativeSource Self}, Path=Background}"/>
+        <Button x:Name="btnGreen" Background="Green" Command="{Binding ColorCommand}" 
+                CommandParameter ="{Binding RelativeSource={RelativeSource Self}, Path=Background}"/>
+
+        <Button Background="DodgerBlue" 
+                Command="{Binding EditModeCommand}"                
+                CommandParameter="Ink"                
+                Margin="10 0 2 0">
+          <materialDesign:PackIcon Kind="Pen" Foreground="White" Width="30" Height="30"/>
+        </Button>
+        <Button Command="{Binding EditModeCommand}"                
+                CommandParameter="EraseByPoint"                
+                Background="DodgerBlue">
+          <materialDesign:PackIcon Kind="Eraser" Foreground="White" Width="30" Height="30"/>
+        </Button>
+        <Button Command="{Binding EditModeCommand}"                
+                CommandParameter="EraseByStroke"                
+                Background="DodgerBlue">
+          <materialDesign:PackIcon Kind="EraserVariant" Foreground="White" Width="30" Height="30"/>
+        </Button>
+        <Button Command="{Binding EditModeCommand}"                
+                CommandParameter="None"                
+                Background="DodgerBlue">
+          <materialDesign:PackIcon Kind="Drag" Foreground="White" Width="30" Height="30"/>
+        </Button>
+      </StackPanel>
+    </Border>
+  </Grid>
+</UserControl>

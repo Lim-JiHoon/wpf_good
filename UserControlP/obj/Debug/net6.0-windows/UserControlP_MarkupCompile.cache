@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\c#\git\wpf_study\UserControlP\App.xaml
-13-1517084546
+17627117438
 
-21-1277734304
+28-424124342
 197-202624425
-MyListView\MainWindow.xaml;MyMaterialDesign\CustomInkCanvas\MyInkCanvas.xaml;MyMaterialDesign\MainView.xaml;MyTrigger\TriggerWindow.xaml;MyUserControl\MainWindow.xaml;MyUserControl\UserItem.xaml;StudyBook\1_controls.xaml;StudyBook\2_frame.xaml;StudyBook\2_page1.xaml;StudyBook\2_page2.xaml;Style\ButtonStyle1.xaml;Style\Colors.xaml;Style\Fonts.xaml;
+MyListView\MainWindow.xaml;MyMaterialDesign\CustomInkCanvas\MyInkCanvas.xaml;MyMaterialDesign\MainView.xaml;MyMessageBox\MessageBoxEx.xaml;MySpread\MainWindow.xaml;MyTrigger\TriggerWindow.xaml;MyUserControl\MainWindow.xaml;MyUserControl\UserItem.xaml;StudyBook\1_controls.xaml;StudyBook\2_frame.xaml;StudyBook\2_page1.xaml;StudyBook\2_page2.xaml;Style\Buttons.xaml;Style\ButtonStyle1.xaml;Style\Colors.xaml;Style\Fonts.xaml;Window1.xaml;
 
 False
 

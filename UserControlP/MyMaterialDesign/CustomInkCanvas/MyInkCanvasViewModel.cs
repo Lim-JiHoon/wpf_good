@@ -15,8 +15,8 @@ namespace UserControlP.MyMaterialDesign.CustomInkCanvas
   {
     public MyInkCanvasViewModel(InkCanvas inkCanvas)
     {
-      ColorCommand = new RelayCommand(ChangePenColor);
-      EditModeCommand = new RelayCommand(ChangeEditingMode);
+      ColorCommand = new RelayCommand<object>(ChangePenColor);
+      EditModeCommand = new RelayCommand<object>(ChangeEditingMode);
       this.inkCanvas = inkCanvas;
     }
 

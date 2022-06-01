@@ -74,3 +74,10 @@ C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\Style\Colors.baml
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\Style\Fonts.baml
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMaterialDesign\CustomInkCanvas\MyInkCanvas.g.cs
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMaterialDesign\CustomInkCanvas\MyInkCanvas.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MySpread\MainWindow.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MySpread\MainWindow.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMessageBox\MessageBoxEx.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMessageBox\MessageBoxEx.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\Style\Buttons.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\Window1.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\Window1.baml

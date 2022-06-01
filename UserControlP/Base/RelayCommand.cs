@@ -7,11 +7,11 @@ using System.Windows.Input;
 
 namespace UserControlP.Base
 {
-  public class RelayCommand : ICommand
+  public class RelayCommand<T> : ICommand    
   {
-    private Action<object> action;
+    private Action<T> action;
 
-    public RelayCommand(Action<object> action)
+    public RelayCommand(Action<T> action)
     {
       this.action = action; 
     }
@@ -24,7 +24,7 @@ namespace UserControlP.Base
 
     public void Execute(object? parameter)
     {
-      action.Invoke(parameter!);
+      action.Invoke((T)parameter!);
     }
   }
 }

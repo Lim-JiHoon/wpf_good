@@ -1,0 +1,113 @@
+﻿<Window x:Class="UserControlP.MyMessageBox.MessageBoxEx"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserControlP.MyMessageBox"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d"        
+        x:Name="root"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Title="MessageBoxEx" Height="450" Width="500">
+  <Window.Background>
+    <SolidColorBrush Opacity="0" Color="White"/>
+  </Window.Background>
+  <Window.Resources>    
+    <local:MsgBoxButtonVisibleConverter x:Key="visibleConverter"/>
+    <Style x:Key="btnTextStyle" TargetType="TextBlock">
+      <Setter Property="FontSize" Value="15"/>
+      <Setter Property="HorizontalAlignment" Value="Center"/>
+      <Setter Property="VerticalAlignment" Value="Center"/>
+      <Setter Property="Foreground" Value="Red"/>
+    </Style>
+  </Window.Resources>
+
+  <WindowChrome.WindowChrome>
+    <WindowChrome ResizeBorderThickness="3" 
+                  GlassFrameThickness="1"
+                  CaptionHeight="70"/>
+  </WindowChrome.WindowChrome>
+
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="70"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="70"/>
+    </Grid.RowDefinitions>
+
+    <!--Header-->
+    <Border Background="{StaticResource color_green}" CornerRadius="30 30 0 0" >
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="auto"/>
+          <ColumnDefinition/>
+          <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <fa:FontAwesome 
+          Margin="20 10 0 10"
+          Grid.Column="0"
+          Foreground="White"
+          FontSize="50"
+          Icon="InfoCircle"
+          HorizontalAlignment="Center" 
+          VerticalAlignment="Center" Width="auto" Height="auto"/>
+        <TextBlock x:Name="title" 
+                   Grid.Column="1"
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Center"
+                   Margin="30 0"
+                   FontSize="30"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   Text="{Binding Title}"/>
+      </Grid>
+    </Border>
+
+    <!--Body-->
+    <Border Grid.Row="1" Background="White" BorderBrush="{StaticResource color_green}" BorderThickness="1 0 1 0">
+      <Grid Margin="40 20 40 20" >
+        <TextBox x:Name="contents" VerticalScrollBarVisibility="Auto" 
+               AcceptsReturn="True"
+               TextWrapping="Wrap"
+               FontSize="25"
+               FontWeight="Bold"
+               IsReadOnly="True"
+               BorderThickness="0"
+               Cursor="Arrow"
+               Text="{Binding Message}"
+               ></TextBox>
+      </Grid>
+    </Border>
+
+    <!--Footer-->
+    <Border Grid.Row="2" BorderThickness="0 1 0 0" BorderBrush="LightGray" Background="White" CornerRadius="0 0 30 30">
+      <Border.Effect>
+        <DropShadowEffect Opacity="0.01" BlurRadius="5"/>
+      </Border.Effect>
+
+      <Border BorderBrush="{StaticResource color_green}" BorderThickness="1 0 1 1" CornerRadius="0 0 30 30">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+          <Button x:Name="btn1" Content="{Binding Button1Text}" 
+                Command="{Binding Button1Command}"
+                CommandParameter="{Binding ElementName=root}"
+                Visibility="{Binding Button1Text, Converter={StaticResource visibleConverter}}"
+                Style="{StaticResource btnStyle_green}"/>
+          <Button x:Name="btn2" 
+                Command="{Binding Button2Command}"
+                CommandParameter="{Binding ElementName=root}"
+                Content="{Binding Button2Text}"                 
+                Visibility="{Binding Button2Text, Converter={StaticResource visibleConverter}}"
+                Style="{StaticResource btnStyle_green}"></Button>
+          <Button x:Name="btn3" 
+                Command="{Binding Button3Command}"
+                CommandParameter="{Binding ElementName=root}"
+                Content="{Binding Button3Text}"                                 
+                Visibility="{Binding Button3Text, Converter={StaticResource visibleConverter}}"
+                Style="{StaticResource btnStyle_green}"></Button>
+        </StackPanel>
+      </Border>
+    </Border>
+  </Grid>
+</Window>

@@ -7,6 +7,15 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="MyAnimation\MainWindow1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyAnimation\TestPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyAnimation\TestPage2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MyListView\MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -45,6 +54,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="MyAnimation\MainWindow1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyAnimation\TestPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyAnimation\TestPage2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MyListView\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

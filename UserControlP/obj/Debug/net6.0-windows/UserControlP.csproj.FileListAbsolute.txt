@@ -81,3 +81,9 @@ C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMessageBox\MessageBo
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\Style\Buttons.baml
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\Window1.g.cs
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\Window1.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyAnimation\MainWindow1.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyAnimation\MainWindow1.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyAnimation\TestPage.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyAnimation\TestPage.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyAnimation\TestPage2.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyAnimation\TestPage2.baml

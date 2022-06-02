@@ -1,0 +1,32 @@
+﻿<Window x:Class="UserControlP.MyAnimation.MainWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserControlP.MyAnimation"
+        mc:Ignorable="d"
+        Title="MainWindow1" Height="450" Width="800">
+
+  <StackPanel>
+
+
+    <Button x:Name="btn" Cursor="Hand" Click="Button_Click">
+      <Button.Triggers>
+        <!--<EventTrigger RoutedEvent="Button.Click" SourceName="btn">
+          <BeginStoryboard Name="MyBeginStoryBoard">
+            <Storyboard>
+              <DoubleAnimation Storyboard.TargetName="btn" 
+                             Storyboard.TargetProperty="Height"
+                             Duration="0:0:5"
+                             From="100" To="700">
+              </DoubleAnimation>
+            </Storyboard>
+          </BeginStoryboard>
+        </EventTrigger>-->
+      </Button.Triggers>
+    </Button>
+    <Button x:Name="btn2" Cursor="Hand" Click="Button_Click2"/>
+    <Frame x:Name="frame" Content="Frame" Height="403"/>
+
+  </StackPanel>
+</Window>

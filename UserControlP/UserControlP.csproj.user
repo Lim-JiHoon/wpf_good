@@ -40,6 +40,9 @@
     <Compile Update="MySpread\MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MyTabControl\Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MyTrigger\TriggerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -103,6 +106,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MySpread\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyTabControl\Window1.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MyTrigger\TriggerWindow.xaml">

@@ -66,8 +66,6 @@ C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\StudyBook\2_page2.g.cs
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\StudyBook\2_frame.baml
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\StudyBook\2_page1.baml
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\StudyBook\2_page2.baml
-C:\c#\git\wpf_study\UserControlP\bin\Debug\net6.0-windows\MaterialDesignColors.dll
-C:\c#\git\wpf_study\UserControlP\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMaterialDesign\MainView.g.cs
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMaterialDesign\MainView.baml
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\Style\Colors.baml
@@ -99,3 +97,5 @@ C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyUserControl\Window1.
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyUserControl\Window1.baml
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyUserControl\MyRadioButton.g.cs
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyUserControl\MyRadioButton.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyTabControl\Window1.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyTabControl\Window1.baml

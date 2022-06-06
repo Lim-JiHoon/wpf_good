@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IKyn6BFrU0ooyND9VSEJKJg7PrIdvkX4ahHLzm50RFd1WFbYs3M94bW5Bv3MpuhTNSYuAVLKyzbAR/q3oh5t+Q==",
+  "dgSpecHash": "pQeaJtgvCVwCkey7EcltgVHZWFUe7EeF4wJQWq1FAZ1TjIQcCabmD9SbjAtI1jzQyWesNrp4UAuzCqspZe1D9w==",
   "success": true,
   "projectFilePath": "C:\\c#\\git\\wpf_study\\UserControlP\\UserControlP.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\RENEWCOM PC\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512",
-    "C:\\Users\\RENEWCOM PC\\.nuget\\packages\\materialdesigncolors\\2.0.6\\materialdesigncolors.2.0.6.nupkg.sha512",
-    "C:\\Users\\RENEWCOM PC\\.nuget\\packages\\materialdesignthemes\\4.5.0\\materialdesignthemes.4.5.0.nupkg.sha512"
+    "C:\\Users\\RENEWCOM PC\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512"
   ],
   "logs": [
     {

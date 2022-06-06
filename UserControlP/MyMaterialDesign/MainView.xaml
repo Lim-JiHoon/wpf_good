@@ -20,13 +20,13 @@
       <Setter Property="FontSize" Value="25"/>
     </Style>
 
-    <Style TargetType="materialDesign:PackIcon">
+    <!--<Style TargetType="materialDesign:PackIcon">
       <Setter Property="VerticalContentAlignment" Value="Stretch"/>
       <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
       <Setter Property="FontFamily" Value="30"/>
       <Setter Property="Width" Value="auto"/>
       <Setter Property="Height" Value="auto"/>
-    </Style>
+    </Style>-->
 
     <Style x:Key="TitleButton" TargetType="Button">
       <Setter Property="Foreground" Value="White"/>
@@ -57,14 +57,14 @@
       </Grid.ColumnDefinitions>
 
       <Button Style="{StaticResource TitleButton}" >
-        <materialDesign:PackIcon Kind="FormatListBulletedSquare" />
+        <!--<materialDesign:PackIcon Kind="FormatListBulletedSquare" />-->
       </Button>
       <StackPanel Grid.Column="1"  Orientation="Horizontal" HorizontalAlignment="Right">
         <Button Style="{StaticResource TitleButton}">
-          <materialDesign:PackIcon Kind="Person"/>
+          <!--<materialDesign:PackIcon Kind="Person"/>-->
         </Button>
         <Button Style="{StaticResource TitleButton}">
-          <materialDesign:PackIcon Kind="Power"/>
+          <!--<materialDesign:PackIcon Kind="Power"/>-->
         </Button>
       </StackPanel>
     </Grid>
@@ -87,7 +87,7 @@
               <ColumnDefinition Width="30"/>
               <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <materialDesign:PackIcon Grid.Column="0" Foreground="White" Kind="LeadPencil" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <!--<materialDesign:PackIcon Grid.Column="0" Foreground="White" Kind="LeadPencil" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
             <TextBlock Margin="20 0" Grid.Column="1" Text="진료기록" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center"/>
           </Grid>
         </Grid>

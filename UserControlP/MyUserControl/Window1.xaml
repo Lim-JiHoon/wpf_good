@@ -1,0 +1,47 @@
+﻿<Window x:Class="UserControlP.MyUserControl.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserControlP.MyUserControl"
+        mc:Ignorable="d"
+        Name="root"
+        Title="Window1" Height="450" Width="800">
+  <Window.Resources>
+    <Style TargetType="RadioButton">
+      <Setter Property="Foreground" Value="Green"/>
+      <Setter Property="FontWeight" Value="Bold"/>
+      <Setter Property="FontSize" Value="20"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="RadioButton">
+            <Border x:Name="border" Background="White" CornerRadius="10" BorderThickness="3" BorderBrush="LightGreen">
+              <ContentPresenter Content="{TemplateBinding Content}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+
+            <ControlTemplate.Triggers >
+              <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Foreground" Value="White"/>
+                <Setter TargetName="border" Property="Background" Value="Green"/>
+                <Setter TargetName="border" Property="BorderBrush" Value="Green"/>
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+  </Window.Resources>
+  <Grid>
+    <ListBox ItemsSource="{Binding ElementName=root, Path=Models}" Width="300">
+      <ListBox.ItemTemplate>
+        <DataTemplate>
+          <local:ImageItem Title="{Binding TItle}" Image="{Binding Image}"/>
+        </DataTemplate>
+      </ListBox.ItemTemplate>
+    </ListBox>
+    <Button Content="Button" HorizontalAlignment="Left" Height="45" Margin="10,10,0,0" VerticalAlignment="Top" Width="77" Click="Button_Click"/>
+    <RadioButton Height="50" Margin="10,60,684,319" />
+    <RadioButton Height="50" Content="fds" Margin="10,120,684,259" />
+    <RadioButton Height="50" Content="fds" Margin="10,180,684,199" />
+  </Grid>
+</Window>

@@ -87,3 +87,15 @@ C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyAnimation\TestPage.g
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyAnimation\TestPage.baml
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyAnimation\TestPage2.g.cs
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyAnimation\TestPage2.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyPageByUserControl\Window1.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyPageByUserControl\Window1.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyPageByUserControl\HomeView.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyPageByUserControl\HomeView.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyPageByUserControl\AccountView.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyPageByUserControl\AccountView.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyUserControl\ImageItem.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyUserControl\ImageItem.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyUserControl\Window1.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyUserControl\Window1.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyUserControl\MyRadioButton.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyUserControl\MyRadioButton.baml

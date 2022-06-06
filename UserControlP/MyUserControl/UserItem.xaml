@@ -26,5 +26,7 @@
                      Spin="True" SpinDuration="10" 
                      Icon="Git" 
                      VerticalAlignment="Center" HorizontalAlignment="Center" />-->
+
+    
   </Grid>
 </UserControl>

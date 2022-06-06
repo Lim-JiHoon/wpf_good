@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using UserControlP.MyMessageBox;
+using UserControlP.MyUserControl;
 
 namespace UserControlP
 {
@@ -24,6 +25,9 @@ namespace UserControlP
     public Window1()
     {
       InitializeComponent();
+
+      var useritem = new UserItem();
+      grid1.Children.Add(useritem);
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)

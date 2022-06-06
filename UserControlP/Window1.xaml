@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:UserControlP"
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800" Cursor="Hand">
-    <Grid>
-    <Button Content="Button" Click="Button_Click"/>
+    <Grid x:Name="grid1">
+    <Button Content="Button" Click="Button_Click" Cursor="Hand"/>
 
   </Grid>
 </Window>

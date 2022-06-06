@@ -2,13 +2,14 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:UserControlP" 
-             StartupUri="MyAnimation/MainWindow1.xaml">
+             StartupUri="MyUserControl/window1.xaml">
+             <!--StartupUri="MyPageByUserControl/Window1.xaml">-->
              <!--StartupUri="Window1.xaml">-->
+             <!--StartupUri="MyAnimation/MainWindow1.xaml">-->
              <!--StartupUri="MyMessageBox/MessageBoxEx.xaml">-->
              <!--StartupUri="StudyBook/2_frame.xaml">-->
              <!--StartupUri="MyListView/MainWindow.xaml">-->
              <!--StartupUri="MyTrigger/TriggerWindow.xaml">-->
-             <!--StartupUri="MyUserControl/MainWindow.xaml">-->
   <Application.Resources>
     <ResourceDictionary>
       <ResourceDictionary.MergedDictionaries>

@@ -31,5 +31,7 @@
         </LinearGradientBrush>
       </Button.Background>-->
     </Button>
+    <uc:ImageItem Height="500" Title="2022-01-01" Image="C:\Users\RENEWCOM PC\Pictures\notitle.png"/>
+
   </StackPanel>
 </Window>

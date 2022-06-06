@@ -28,13 +28,31 @@
     <Compile Update="MyMessageBox\MessageBoxEx.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MyPageByUserControl\AccountView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyPageByUserControl\HomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyPageByUserControl\Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MySpread\MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MyTrigger\TriggerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MyUserControl\ImageItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyUserControl\MyRadioButton.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MyUserControl\UserItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyUserControl\Window1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="StudyBook\1_controls.xaml.cs">
@@ -75,16 +93,34 @@
     <Page Update="MyMessageBox\MessageBoxEx.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MyPageByUserControl\AccountView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyPageByUserControl\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyPageByUserControl\Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MySpread\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MyTrigger\TriggerWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MyUserControl\ImageItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MyUserControl\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MyUserControl\MyRadioButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MyUserControl\UserItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyUserControl\Window1.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="StudyBook\1_controls.xaml">

@@ -99,3 +99,8 @@ C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyUserControl\MyRadioB
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyUserControl\MyRadioButton.baml
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyTabControl\Window1.g.cs
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyTabControl\Window1.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyCommand\Window1.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyCommand\Window1.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyModelBindingCall\Window1.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyModelBindingCall\Window1.baml
+C:\c#\git\wpf_study\UserControlP\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll

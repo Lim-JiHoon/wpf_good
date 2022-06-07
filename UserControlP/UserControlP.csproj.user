@@ -16,6 +16,9 @@
     <Compile Update="MyAnimation\TestPage2.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MyCommand\Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MyListView\MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -26,6 +29,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MyMessageBox\MessageBoxEx.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyModelBindingCall\Window1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MyPageByUserControl\AccountView.xaml.cs">
@@ -84,6 +90,9 @@
     <Page Update="MyAnimation\TestPage2.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MyCommand\Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MyListView\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -94,6 +103,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MyMessageBox\MessageBoxEx.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyModelBindingCall\Window1.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MyPageByUserControl\AccountView.xaml">

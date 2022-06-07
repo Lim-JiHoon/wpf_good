@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "UserControlP/1.0.0": {
         "dependencies": {
-          "FontAwesome.WPF": "4.7.0.9"
+          "FontAwesome.WPF": "4.7.0.9",
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39"
         },
         "runtime": {
           "UserControlP.dll": {}
@@ -19,6 +20,14 @@
           "lib/net40/FontAwesome.WPF.dll": {
             "assemblyVersion": "4.7.0.37774",
             "fileVersion": "4.7.0.9"
+          }
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+        "runtime": {
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.39.4716"
           }
         }
       }
@@ -36,6 +45,13 @@
       "sha512": "sha512-SXE080rnyWMm9Dt0BZzMxh89/o9teuSaqL1N+0O/XM/F/HU8JuZA4XaEKxjBigwZPHHU3/udTa0QMYCHkmH43Q==",
       "path": "fontawesome.wpf/4.7.0.9",
       "hashPath": "fontawesome.wpf.4.7.0.9.nupkg.sha512"
+    },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.39",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
     }
   }
 }

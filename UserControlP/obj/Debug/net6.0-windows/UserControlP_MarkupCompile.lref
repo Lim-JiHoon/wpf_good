@@ -4,7 +4,11 @@ FC:\c#\git\wpf_study\UserControlP\MyAnimation\MainWindow1.xaml;;
 FC:\c#\git\wpf_study\UserControlP\MyAnimation\TestPage.xaml;;
 FC:\c#\git\wpf_study\UserControlP\MyAnimation\TestPage2.xaml;;
 FC:\c#\git\wpf_study\UserControlP\MyCommand\Window1.xaml;;
+FC:\c#\git\wpf_study\UserControlP\MyContextMenu\Window1.xaml;;
+FC:\c#\git\wpf_study\UserControlP\MyEventToCommand\Window1.xaml;;
 FC:\c#\git\wpf_study\UserControlP\MyListView\MainWindow.xaml;;
+FC:\c#\git\wpf_study\UserControlP\MyMacro\Views\Contents\SendKeysControl.xaml;;
+FC:\c#\git\wpf_study\UserControlP\MyMacro\Window1.xaml;;
 FC:\c#\git\wpf_study\UserControlP\MyMaterialDesign\CustomInkCanvas\MyInkCanvas.xaml;;
 FC:\c#\git\wpf_study\UserControlP\MyMaterialDesign\MainView.xaml;;
 FC:\c#\git\wpf_study\UserControlP\MyMessageBox\MessageBoxEx.xaml;;
@@ -25,4 +29,5 @@ FC:\c#\git\wpf_study\UserControlP\StudyBook\2_frame.xaml;;
 FC:\c#\git\wpf_study\UserControlP\StudyBook\2_page1.xaml;;
 FC:\c#\git\wpf_study\UserControlP\StudyBook\2_page2.xaml;;
 FC:\c#\git\wpf_study\UserControlP\Window1.xaml;;
+FC:\c#\git\wpf_study\UserControlP\MyMacro\Views\Contents\MouseControl.xaml;;
 

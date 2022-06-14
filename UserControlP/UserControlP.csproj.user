@@ -19,7 +19,19 @@
     <Compile Update="MyCommand\Window1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MyContextMenu\Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyEventToCommand\Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MyListView\MainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyMacro\Views\Contents\MouseControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyMacro\Views\Contents\SendKeysControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MyMaterialDesign\CustomInkCanvas\MyInkCanvas.xaml.cs">
@@ -47,6 +59,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MyTabControl\Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyMacro\Window1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MyTrigger\TriggerWindow.xaml.cs">
@@ -93,7 +108,19 @@
     <Page Update="MyCommand\Window1.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MyContextMenu\Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyEventToCommand\Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MyListView\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyMacro\Views\Contents\MouseControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyMacro\Views\Contents\SendKeysControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MyMaterialDesign\CustomInkCanvas\MyInkCanvas.xaml">
@@ -121,6 +148,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MyTabControl\Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyMacro\Window1.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MyTrigger\TriggerWindow.xaml">

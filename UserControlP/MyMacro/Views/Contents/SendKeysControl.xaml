@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="UserControlP.MyMacro.Views.Contents.SendKeysControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UserControlP.MyMacro.Views.Contents"
+             mc:Ignorable="d" 
+             Name="root"
+             d:DesignHeight="450" d:DesignWidth="800">
+  <UserControl.Resources>
+    <Style TargetType="TextBox">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type TextBox}">
+            <Border x:Name="border"                
+                BorderThickness="0 0 0 1"
+                BorderBrush="HotPink"
+                Background="{TemplateBinding Background}">
+              <ScrollViewer x:Name="PART_ContentHost" />
+            </Border>
+
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+  </UserControl.Resources>
+  <Grid Background="White" Height="50">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="100"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+    <TextBlock Grid.Column="0" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center"
+               FontSize="20"
+               Text="SendKeys"/>
+
+    <TextBox Grid.Column="1" Margin="10 5" VerticalContentAlignment="Center" 
+             Text="{Binding ElementName=root,Path=Text, UpdateSourceTrigger=PropertyChanged}" Width="auto"/>
+  </Grid>
+</UserControl>

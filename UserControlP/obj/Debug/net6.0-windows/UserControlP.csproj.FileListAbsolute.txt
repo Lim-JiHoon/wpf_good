@@ -104,3 +104,17 @@ C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyCommand\Window1.baml
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyModelBindingCall\Window1.g.cs
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyModelBindingCall\Window1.baml
 C:\c#\git\wpf_study\UserControlP\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyEventToCommand\Window1.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyEventToCommand\Window1.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\UserControlP.csproj.ResolveComReference.cache
+C:\c#\git\wpf_study\UserControlP\bin\Debug\net6.0-windows\WindowsInput.dll
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMacro\Window1.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMacro\Window1.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyContextMenu\Window1.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyContextMenu\Window1.baml
+C:\c#\git\wpf_study\UserControlP\bin\Debug\net6.0-windows\HoonsLib.dll
+C:\c#\git\wpf_study\UserControlP\bin\Debug\net6.0-windows\HoonsLib.pdb
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMacro\Views\Contents\SendKeysControl.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMacro\Views\Contents\SendKeysControl.baml
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMacro\Views\Contents\MouseControl.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyMacro\Views\Contents\MouseControl.baml

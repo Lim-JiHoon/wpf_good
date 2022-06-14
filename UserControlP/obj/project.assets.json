@@ -11,6 +11,15 @@
           "lib/net40/FontAwesome.WPF.dll": {}
         }
       },
+      "InputSimulator/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net20/WindowsInput.dll": {}
+        },
+        "runtime": {
+          "lib/net20/WindowsInput.dll": {}
+        }
+      },
       "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
         "type": "package",
         "compile": {
@@ -21,6 +30,19 @@
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "HoonsLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/HoonsLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HoonsLib.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
         ]
       }
     }
@@ -49,6 +71,19 @@
         "tools/install.ps1"
       ]
     },
+    "InputSimulator/1.0.4": {
+      "sha512": "D0LvRCPQMX6/FJHBjng+RO+wRDuHTJrfo7IAc7rmkPvRqchdVGJWg3y70peOtDy3OLNK+HSOwVkH4GiuLnkKgA==",
+      "type": "package",
+      "path": "inputsimulator/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "inputsimulator.1.0.4.nupkg.sha512",
+        "inputsimulator.nuspec",
+        "lib/net20/WindowsInput.dll",
+        "lib/net20/WindowsInput.xml"
+      ]
+    },
     "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
       "sha512": "8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
       "type": "package",
@@ -73,11 +108,18 @@
         "microsoft.xaml.behaviors.wpf.nuspec",
         "tools/Install.ps1"
       ]
+    },
+    "HoonsLib/1.0.0": {
+      "type": "project",
+      "path": "../../HoonsLib/HoonsLib/HoonsLib.csproj",
+      "msbuildProject": "../../HoonsLib/HoonsLib/HoonsLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "FontAwesome.WPF >= 4.7.0.9",
+      "HoonsLib >= 1.0.0",
+      "InputSimulator >= 1.0.4",
       "Microsoft.Xaml.Behaviors.Wpf >= 1.1.39"
     ]
   },
@@ -107,7 +149,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\c#\\git\\HoonsLib\\HoonsLib\\HoonsLib.csproj": {
+              "projectPath": "C:\\c#\\git\\HoonsLib\\HoonsLib\\HoonsLib.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -123,6 +169,10 @@
           "FontAwesome.WPF": {
             "target": "Package",
             "version": "[4.7.0.9, )"
+          },
+          "InputSimulator": {
+            "target": "Package",
+            "version": "[1.0.4, )"
           },
           "Microsoft.Xaml.Behaviors.Wpf": {
             "target": "Package",
@@ -143,7 +193,7 @@
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           },
-          "Microsoft.WindowsDesktop.App.WPF": {
+          "Microsoft.WindowsDesktop.App": {
             "privateAssets": "none"
           }
         },
@@ -158,6 +208,16 @@
       "warningLevel": 1,
       "message": "프로젝트 대상 프레임워크 'net6.0-windows7.0' 대신 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8'을(를) 사용하여 패키지 'FontAwesome.WPF 4.7.0.9'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
       "libraryId": "FontAwesome.WPF",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "프로젝트 대상 프레임워크 'net6.0-windows7.0' 대신 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8'을(를) 사용하여 패키지 'InputSimulator 1.0.4'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "libraryId": "InputSimulator",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]

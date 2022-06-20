@@ -1,4 +1,8 @@
-﻿using System.Runtime.InteropServices;
+﻿using HoonsLib.MySqlEx;
+using HoonsLib.SqLiteEx;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using UserControlP.MyMacro.ViewModels;
@@ -13,13 +17,12 @@ namespace UserControlP.MyMacro
     public Window1()
     {
       InitializeComponent();
-      DataContext = new ViewModel();     
+      DataContext = new ViewModel();       
     }
-
+     
     private void Button_Click(object sender, RoutedEventArgs e)
     {
-      //ShowDesktop();
-
+      lb.SelectedIndex = 1;
     }
 
     public void SendKey(Key key)

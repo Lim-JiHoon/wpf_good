@@ -24,7 +24,7 @@ namespace UserControlP.Base
 
     public void Execute(object? parameter)
     {
-      action.Invoke((T)parameter!);
+      action?.Invoke((T)parameter!);
     }
   }
 }

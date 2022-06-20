@@ -44,7 +44,9 @@ namespace UserControlP.MyAnimation
     {
       frame.Navigate(new Uri("/MyAnimation/TestPage.xaml", UriKind.RelativeOrAbsolute));
 
-     
+     var d = delegate(int a, int b) {
+       
+     };
 
 
 

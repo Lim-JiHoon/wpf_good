@@ -4,25 +4,165 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UserControlP.MyMacro.Views.Contents"
+             xmlns:models="clr-namespace:UserControlP.MyMacro.Models"
+             xmlns:converters="clr-namespace:UserControlP.MyMacro.Converters"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
              mc:Ignorable="d" 
-             Name="root"
-             d:DesignHeight="450" d:DesignWidth="800">
-  <Grid Background="White" Height="50">
+             Name="root"             
+             d:DesignHeight="50" d:DesignWidth="800">
+  <UserControl.Resources>
+    <converters:MouseActionConverter x:Key="MouseActionConverter"/>
+    <Style TargetType="RadioButton">
+      <Setter Property="FontSize" Value="15"/>
+    </Style>
+    <Storyboard x:Key="Storyboard1">
+      <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock" 
+                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+        <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-10"/>
+        <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+      </DoubleAnimationUsingKeyFrames>
+      <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-100"/>
+        <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>-->
+    </Storyboard>
+  </UserControl.Resources>
+
+  <UserControl.Triggers>
+    <EventTrigger RoutedEvent="UserControl.Loaded">
+      <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+    </EventTrigger>
+  </UserControl.Triggers>
+
+  <Grid Height="45">
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="100"/>
       <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="auto"/>
+      <ColumnDefinition Width="Auto"/>
     </Grid.ColumnDefinitions>
 
-    <TextBlock Grid.Column="0" 
+    <TextBlock x:Name="textBlock" Grid.Column="0" 
                HorizontalAlignment="Center" 
                VerticalAlignment="Center"
                FontSize="20"
-               Text="Mouse"/>
+               Text="Mouse" RenderTransformOrigin="0.5,0.5">
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+    </TextBlock>
 
-    <StackPanel Grid.Column="1" Orientation="Horizontal">
-      <TextBox Name="txtPoint" Margin="10 5" VerticalContentAlignment="Center" Width="100"
+    <Border  Grid.Column="1" Padding="5 5">
+      <StackPanel Orientation="Horizontal">
+        <TextBox Name="txtPoint" Margin="0 0 3 0" VerticalContentAlignment="Center" Width="100"
              Text="{Binding ElementName=root,Path=MousePoint, UpdateSourceTrigger=PropertyChanged}"/>
-      <Button Margin="10 5">현재 위치 저장</Button>
-    </StackPanel>
+        <StackPanel Margin="0 5" VerticalAlignment="Center" >
+          <TextBlock Text="위치 저장"/>
+          <TextBlock Text="Alt+Shift+S" Foreground="HotPink" TextDecorations="Underline"/>
+        </StackPanel>
+        <Separator Style="{StaticResource VerticalSeparator}" />
+        <RadioButton x:Name="radioButton" Content="Click"      
+                     Command="{Binding MouseActionCommand}"
+                     CommandParameter="{x:Static models:MouseControlAction.Click}"
+                     Margin = "3 0"   VerticalAlignment="Center" VerticalContentAlignment="Center" Height="{Binding RelativeSource={RelativeSource AncestorType=StackPanel}, Path=ActualHeight}" RenderTransformOrigin="0.5,0.5">
+          <RadioButton.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </RadioButton.RenderTransform>
+          <RadioButton.IsChecked>
+            <Binding Path="MouseAction" Converter="{StaticResource MouseActionConverter}" 
+                     ConverterParameter="{x:Static models:MouseControlAction.Click}"/>
+          </RadioButton.IsChecked>
+        </RadioButton>
+        <RadioButton x:Name="radioButton1" Content="DoubleClick"
+                     Command="{Binding MouseActionCommand}"
+                     CommandParameter="{x:Static models:MouseControlAction.DoubleClick}"
+                     Margin = "3 0"   VerticalAlignment="Center" VerticalContentAlignment="Center" Height="{Binding RelativeSource={RelativeSource AncestorType=StackPanel}, Path=ActualHeight}" RenderTransformOrigin="0.5,0.5">
+          <RadioButton.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </RadioButton.RenderTransform>
+          <RadioButton.IsChecked>
+            <Binding Path="MouseAction" Converter="{StaticResource MouseActionConverter}" 
+                     ConverterParameter="{x:Static models:MouseControlAction.DoubleClick}"/>
+          </RadioButton.IsChecked>
+        </RadioButton>
+        <RadioButton x:Name="radioButton2" Content="MouseDown"    
+                     Command="{Binding MouseActionCommand}"
+                     CommandParameter="{x:Static models:MouseControlAction.MouseDown}"
+                     Margin = "3 0" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="{Binding RelativeSource={RelativeSource AncestorType=StackPanel}, Path=ActualHeight}" RenderTransformOrigin="0.5,0.5">
+          <RadioButton.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </RadioButton.RenderTransform>
+          <RadioButton.IsChecked>
+            <Binding Path="MouseAction" Converter="{StaticResource MouseActionConverter}" 
+                     ConverterParameter="{x:Static models:MouseControlAction.MouseDown}"/>
+          </RadioButton.IsChecked>
+        </RadioButton>
+        <RadioButton x:Name="radioButton3" Content="MouseUp"     
+                     Command="{Binding MouseActionCommand}"
+                     CommandParameter="{x:Static models:MouseControlAction.MouseUp}"
+                     Margin = "3 0" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="{Binding RelativeSource={RelativeSource AncestorType=StackPanel}, Path=ActualHeight}" RenderTransformOrigin="0.5,0.5">
+          <RadioButton.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </RadioButton.RenderTransform>
+          <RadioButton.IsChecked>
+            <Binding Path="MouseAction" Converter="{StaticResource MouseActionConverter}" 
+                     ConverterParameter="{x:Static models:MouseControlAction.MouseUp}"/>
+          </RadioButton.IsChecked>
+        </RadioButton>
+        <RadioButton x:Name="radioButton4" Content="MouseMove"      
+                     Command="{Binding MouseActionCommand}"
+                     CommandParameter="{x:Static models:MouseControlAction.MouseMove}"
+                     Margin = "3 0" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="{Binding RelativeSource={RelativeSource AncestorType=StackPanel}, Path=ActualHeight}" RenderTransformOrigin="0.5,0.5">
+          <RadioButton.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </RadioButton.RenderTransform>
+          <RadioButton.IsChecked>
+            <Binding Path="MouseAction" Converter="{StaticResource MouseActionConverter}" 
+                     ConverterParameter="{x:Static models:MouseControlAction.MouseMove}"/>
+          </RadioButton.IsChecked>
+        </RadioButton>
+      </StackPanel>
+    </Border>
+    <Separator Grid.Column="2"  Style="{StaticResource VerticalSeparator}" />
+    <local:DelaySecControl x:Name="delaySecControl" DelaySec="{Binding DelaySec}" Grid.Column="3" RenderTransformOrigin="0.5,0.5">
+      <local:DelaySecControl.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </local:DelaySecControl.RenderTransform>
+    </local:DelaySecControl>
   </Grid>
 </UserControl>

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\c#\git\wpf_study\UserControlP\App.xaml
-34-1172541140
+382130422083
 
-651157477830
-207-1516576183
-MyAnimation\MainWindow1.xaml;MyAnimation\TestPage.xaml;MyAnimation\TestPage2.xaml;MyCommand\Window1.xaml;MyContextMenu\Window1.xaml;MyEventToCommand\Window1.xaml;MyListView\MainWindow.xaml;MyMacro\Views\Contents\MouseControl.xaml;MyMacro\Views\Contents\SendKeysControl.xaml;MyMacro\Window1.xaml;MyMaterialDesign\CustomInkCanvas\MyInkCanvas.xaml;MyMaterialDesign\MainView.xaml;MyMessageBox\MessageBoxEx.xaml;MyModelBindingCall\Window1.xaml;MyPageByUserControl\AccountView.xaml;MyPageByUserControl\HomeView.xaml;MyPageByUserControl\Window1.xaml;MySpread\MainWindow.xaml;MyTabControl\Window1.xaml;MyTrigger\TriggerWindow.xaml;MyUserControl\ImageItem.xaml;MyUserControl\MainWindow.xaml;MyUserControl\MyRadioButton.xaml;MyUserControl\UserItem.xaml;MyUserControl\Window1.xaml;StudyBook\1_controls.xaml;StudyBook\2_frame.xaml;StudyBook\2_page1.xaml;StudyBook\2_page2.xaml;Style\Buttons.xaml;Style\ButtonStyle1.xaml;Style\Colors.xaml;Style\Fonts.xaml;Window1.xaml;
+72127868683
+221-1850983804
+MyAnimation\MainWindow1.xaml;MyAnimation\TestPage.xaml;MyAnimation\TestPage2.xaml;MyAnimation\Window1.xaml;MyCefSharp\Window1.xaml;MyCommand\Window1.xaml;MyContextMenu\Window1.xaml;MyEventToCommand\Window1.xaml;MyListView\MainWindow.xaml;MyMacro\Views\Contents\DelaySecControl.xaml;MyMacro\Views\Contents\MouseControl.xaml;MyMacro\Views\Contents\SendKeysControl.xaml;MyMacro\Window1.xaml;MyMaterialDesign\CustomInkCanvas\MyInkCanvas.xaml;MyMaterialDesign\MainView.xaml;MyMessageBox\MessageBoxEx.xaml;MyModelBindingCall\Window1.xaml;MyPageByUserControl\AccountView.xaml;MyPageByUserControl\HomeView.xaml;MyPageByUserControl\Window1.xaml;MySpread\MainWindow.xaml;MyTabControl\Window1.xaml;MyTrigger\TriggerWindow.xaml;MyUserControl\ImageItem.xaml;MyUserControl\MainWindow.xaml;MyUserControl\MyRadioButton.xaml;MyUserControl\UserItem.xaml;MyUserControl\Window1.xaml;StudyBook\1_controls.xaml;StudyBook\2_frame.xaml;StudyBook\2_page1.xaml;StudyBook\2_page2.xaml;Style\Buttons.xaml;Style\ButtonStyle1.xaml;Style\Colors.xaml;Style\Fonts.xaml;Style\Separators.xaml;Window1.xaml;
 
-False
+True
 

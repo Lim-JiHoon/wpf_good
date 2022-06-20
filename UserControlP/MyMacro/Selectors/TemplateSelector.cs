@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using UserControlP.MyMacro.Models;
+using UserControlP.MyMacro.ViewModels;
 
 namespace UserControlP.MyMacro
 {
@@ -16,10 +16,10 @@ namespace UserControlP.MyMacro
       FrameworkElement element = (FrameworkElement)container;
       MacroBase macro = (MacroBase)item;
 
-      if (macro is MouseMacro)
+      if (macro is MouseControlViewModel)
       {
         return (DataTemplate)element.FindResource("MouseMacro");
-      }else if (macro is SendKeysMacro)
+      }else if (macro is SendKeysControlViewModel)
       {
         return (DataTemplate)element.FindResource("SendKeysMacro");
       }

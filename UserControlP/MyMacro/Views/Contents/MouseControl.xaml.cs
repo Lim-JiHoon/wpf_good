@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using UserControlP.Base;
-using WinForm= System.Windows.Forms;
+using WinForm = System.Windows.Forms;
 namespace UserControlP.MyMacro.Views.Contents
 {
   /// <summary>
@@ -45,6 +46,6 @@ namespace UserControlP.MyMacro.Views.Contents
     public static readonly DependencyProperty MousePointProperty =
         DependencyProperty.Register("MousePoint", typeof(string), typeof(MouseControl), new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault));
 
-
+   
   }
 }

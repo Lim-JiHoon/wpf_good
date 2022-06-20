@@ -8,7 +8,7 @@
         Title="Window1" Height="450" Width="800">
   <Window.Resources>
     <DataTemplate x:Key="MouseMacro">
-        <contents:MouseControl MousePoint="{Binding Point}"/>        
+      <contents:MouseControl MousePoint="{Binding Point}"/>
     </DataTemplate>
     <DataTemplate x:Key="SendKeysMacro">
       <contents:SendKeysControl Text="{Binding Keys, UpdateSourceTrigger=PropertyChanged}" />
@@ -21,34 +21,61 @@
                 Key="A"
                 Command="{Binding Alt1Command}"/>
   </Window.InputBindings>
-  <Grid>
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="auto"/>
-      <ColumnDefinition/>
-    </Grid.ColumnDefinitions>
+  <DockPanel>
+    <Border Padding="2" DockPanel.Dock="Top" Height="30">
+      <Grid >
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="auto"/> <!-- 0 -->
+          <ColumnDefinition Width="auto"/> <!-- 1 -->
+          <ColumnDefinition Width="auto"/> <!-- 2 -->
+          <ColumnDefinition Width="auto"/> <!-- 3 -->
+          <ColumnDefinition Width="*"/>    <!-- 4 -->
+          <ColumnDefinition Width="auto"/> <!-- 5 -->
+          <ColumnDefinition Width="auto"/> <!-- 6 -->
+          <ColumnDefinition Width="auto"/> <!-- 7 -->
+          <ColumnDefinition Width="auto"/> <!-- 8 -->
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Margin="3" Command="{Binding SaveCommand}" Content="저장"/>
+        <Button Grid.Column="1" Margin="3" Command="{Binding LoadCommand}" Content="불러오기"/>        
+        <Button Grid.Column="2" Margin="3" Command="{Binding MacroKeyCommand}" Content="Add SendKeys"/>
+        <Button Grid.Column="3" Margin="3" Command="{Binding MacroMouseCommand}" Content="Add Mouse"/>
+        <CheckBox Grid.Column="6" Margin="3" IsChecked="{Binding IsRepeat}" Content="반복" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button Grid.Column="7" Margin="3" Content="시작(F1)"/>
+        <Button Grid.Column="8" Margin="3" Content="중지(F2)"/>
 
-    <StackPanel>
-      <Button Command="{Binding MacroKeyCommand}">키입력</Button>
-      <Button Command="{Binding MacroMouseCommand}">마우스</Button>
-      <Button Command="{Binding RunCommand}">Run</Button>
-      <Button Click="Button_Click">SendKey</Button>
-    </StackPanel>
+      </Grid>
+    </Border>
 
-    <ListBox x:Name="lb" Grid.Column="1"             
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="auto"/>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+
+      <StackPanel>
+        <Button Command="{Binding MacroKeyCommand}">  키입력</Button>
+        <Button Command="{Binding MacroMouseCommand}">마우스</Button>
+        <Button Command="{Binding RunCommand}">        Run</Button>
+        <Button Click="Button_Click">SendKey</Button>
+      </StackPanel>
+
+      <ListBox x:Name="lb" Grid.Column="1"      
+      SelectedIndex="{Binding SelectedIndex}"
       ItemsSource="{Binding MacroBases}"
       ItemTemplateSelector="{StaticResource selector}"
-      SelectedItem="{Binding SelectedMacroBase}">
-      <ListBox.ItemContainerStyle>
-        <Style TargetType="ListBoxItem">
-          <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-        </Style>
-      </ListBox.ItemContainerStyle>
-      <b:Interaction.Triggers>
-        <b:EventTrigger EventName="KeyUp">
-          <b:InvokeCommandAction Command="{Binding KeyDownCommand}" 
+      SelectedItem="{Binding SelectedMacroBase, Mode=OneWayToSource}">
+        <ListBox.ItemContainerStyle>
+          <Style TargetType="ListBoxItem">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+          </Style>
+        </ListBox.ItemContainerStyle>
+        <b:Interaction.Triggers>
+          <b:EventTrigger EventName="KeyUp">
+            <b:InvokeCommandAction Command="{Binding KeyDownCommand}" 
                                  PassEventArgsToCommand="True"/>
-        </b:EventTrigger>
-      </b:Interaction.Triggers>
-    </ListBox>
-  </Grid>
+          </b:EventTrigger>
+        </b:Interaction.Triggers>
+      </ListBox>
+    </Grid>
+  </DockPanel>
 </Window>

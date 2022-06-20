@@ -9,11 +9,12 @@ namespace UserControlP.MyMacro
 {
   public abstract class MacroBase : BaseViewModel
   {
-    public virtual float DelaySec { get; set; } = 0;
+    public virtual string DelaySec { get; set; } = "0";
 
     public virtual Task Run()
     {
-      return Task.Delay((int)(DelaySec * 1000));
+      float.TryParse(DelaySec, out float sec);
+      return Task.Delay((int)(sec * 1000));
     }
   }
 }

@@ -16,6 +16,12 @@
     <Compile Update="MyAnimation\TestPage2.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MyAnimation\Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyCefSharp\Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MyCommand\Window1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -26,6 +32,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MyListView\MainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MyMacro\Views\Contents\DelaySecControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MyMacro\Views\Contents\MouseControl.xaml.cs">
@@ -105,6 +114,12 @@
     <Page Update="MyAnimation\TestPage2.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MyAnimation\Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyCefSharp\Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MyCommand\Window1.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -115,6 +130,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MyListView\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyMacro\Views\Contents\DelaySecControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MyMacro\Views\Contents\MouseControl.xaml">
@@ -190,6 +208,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Style\Colors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\Separators.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Style\Fonts.xaml">

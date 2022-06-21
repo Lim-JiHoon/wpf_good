@@ -1,5 +1,5 @@
 ﻿using HoonsLib.MySqlEx;
-using HoonsLib.SqLiteEx;
+using HoonsLib.SQLiteEx;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;

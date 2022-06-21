@@ -18,7 +18,16 @@ namespace UserControlP.MyMacro.Converters
 
     public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
     {
-      return value.Equals(true) ? parameter : Binding.DoNothing; 
+      return value.Equals(true) ? parameter : Binding.DoNothing;
+    }
+
+    public static SendKeysAction StringToEnum(string action)
+    {
+      return action switch
+      {
+        "sendkeys" => SendKeysAction.SendKeys,
+        _ => SendKeysAction.OnlyText,
+      };
     }
   }
 }

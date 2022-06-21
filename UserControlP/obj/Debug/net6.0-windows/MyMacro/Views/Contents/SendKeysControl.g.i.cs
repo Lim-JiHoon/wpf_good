@@ -64,7 +64,7 @@ namespace UserControlP.MyMacro.Views.Contents {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UserControlP;V1.0.0.0;component/mymacro/views/contents/sendkeyscontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UserControlP;component/mymacro/views/contents/sendkeyscontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\MyMacro\Views\Contents\SendKeysControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

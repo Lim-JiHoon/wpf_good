@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using UserControlP.Base;
+using UserControlP.MyMacro.Models;
+using UserControlP.MyMacro.Models.Repository;
 using UserControlP.MyMacro.ViewModels;
 
 namespace UserControlP.MyMacro.ViewModels
@@ -43,21 +45,28 @@ namespace UserControlP.MyMacro.ViewModels
       stopCalled = false;
     }
 
-    private void SaveMethod(object _)
-    {
-      OpenFileDialog ofd = new OpenFileDialog();
-      if (ofd.ShowDialog() == true)
-      {
-
-      }
-    }
-
-    private void LoadMethod(object _)
+    private async void SaveMethod(object _)
     {
       SaveFileDialog sfd = new SaveFileDialog();
       if (sfd.ShowDialog() == true)
       {
+        await MacroRepository.Create(sfd.FileName);
+        var saveLogic = new SaveLogic();
+        foreach (Macro m in saveLogic.GetMacros(MacroBases))
+        {
+          await MacroRepository.Save(sfd.FileName, m);
+        }
+      }
+    }
 
+    private async void LoadMethod(object _)
+    {
+      OpenFileDialog ofd = new OpenFileDialog();
+      if (ofd.ShowDialog() == true)
+      {
+        List<Macro> macros = await MacroRepository.GetMacros(ofd.FileName);
+        var loadLogic = new LoadLogic(macros);
+        MacroBases = new ObservableCollection<MacroBase>(loadLogic.GetMacroBases());
       }
     }
 

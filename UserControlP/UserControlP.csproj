@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <None Remove="Fonts\GamjaFlower-Regular.ttf" />
+    <None Remove="Images\clicksoft_icon_128x128.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +26,7 @@
   <ItemGroup>
     <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
     <PackageReference Include="InputSimulator" Version="1.0.4" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
     <PackageReference Include="PropertyChanged.Fody" Version="3.4.1" />
   </ItemGroup>
@@ -35,6 +37,7 @@
 
   <ItemGroup>
     <Resource Include="Fonts\GamjaFlower-Regular.ttf" />
+    <Resource Include="Images\clicksoft_icon_128x128.png" />
   </ItemGroup>
 
 </Project>

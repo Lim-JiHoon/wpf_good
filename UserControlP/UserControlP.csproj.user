@@ -34,6 +34,9 @@
     <Compile Update="MyListView\MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MyLogin\Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MyMacro\Views\Contents\DelaySecControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -130,6 +133,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MyListView\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyLogin\Window1.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MyMacro\Views\Contents\DelaySecControl.xaml">

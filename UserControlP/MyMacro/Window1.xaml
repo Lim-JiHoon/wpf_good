@@ -16,11 +16,11 @@
     <local:TemplateSelector x:Key="selector"/>
   </Window.Resources>
 
-  <Window.InputBindings>
+  <!--<Window.InputBindings>
     <KeyBinding Modifiers="Alt"
                 Key="A"
                 Command="{Binding Alt1Command}"/>
-  </Window.InputBindings>
+  </Window.InputBindings>-->
   <DockPanel>
     <Border Padding="2" DockPanel.Dock="Top" Height="30">
       <Grid >

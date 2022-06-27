@@ -2,7 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:UserControlP" 
-             StartupUri="MyMacro/window1.xaml">
+             StartupUri="MyLogin/window1.xaml">
+             <!--StartupUri="MyMacro/window1.xaml">-->
              <!--StartupUri="MyCefSharp/window1.xaml">-->
              <!--StartupUri="MyAnimation/window1.xaml">-->
              <!--StartupUri="MyContextMenu/window1.xaml">-->

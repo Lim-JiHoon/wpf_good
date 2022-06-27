@@ -149,3 +149,7 @@ C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyCefSharp\Window1.g.c
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyCefSharp\Window1.baml
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\UserControlP.csproj.Fody.CopyLocal.cache
 C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\UserControlP.csproj.Fody.RuntimeCopyLocal.cache
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyLogin\Window1.g.cs
+C:\c#\git\wpf_study\UserControlP\obj\Debug\net6.0-windows\MyLogin\Window1.baml
+C:\c#\git\wpf_study\UserControlP\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Core.dll
+C:\c#\git\wpf_study\UserControlP\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Material.dll

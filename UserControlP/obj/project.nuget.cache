@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KHx+gvJnAXl2u9iMaGx5/oeYrP7mzDReMplfcXVH8N1R0JoToLfDFCtoRTTn7tNLPnDFjfgOkH6lygeMC0NqGQ==",
+  "dgSpecHash": "Pw+ym1z4rJ3Ga+oFvLn+okcPfIVAANI/aAkG1sJ374dY0mUq/7i6gF40Gu+MOHeoCfXt1f02lYC8FnsmZapQNw==",
   "success": true,
   "projectFilePath": "C:\\c#\\git\\wpf_study\\UserControlP\\UserControlP.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\RENEWCOM PC\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\RENEWCOM PC\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
     "C:\\Users\\RENEWCOM PC\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
+    "C:\\Users\\RENEWCOM PC\\.nuget\\packages\\mahapps.metro.iconpacks.material\\4.11.0\\mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512",
     "C:\\Users\\RENEWCOM PC\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\RENEWCOM PC\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\RENEWCOM PC\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
